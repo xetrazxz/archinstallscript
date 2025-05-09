@@ -1,0 +1,2 @@
+# archinstallscript
+DONT USE
