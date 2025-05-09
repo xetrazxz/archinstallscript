@@ -30,7 +30,7 @@ visudo
 pacman -S --noconfirm vulkan-radeon mesa mesa-vdpau libva-mesa-driver lib32-vulkan-radeon lib32-mesa lib32-mesa-vdpau lib32-libva-mesa-driver
 
 # Bootloader & networking
-pacman -S --noconfirm grub efibootmgr dhcpcd iwd
+pacman -S --noconfirm grub efibootmgr dhcpcd iwd timeshift inotify-tools grub-btrfs zram-generator
 
 grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=Grub
 grub-mkconfig -o /boot/grub/grub.cfg
