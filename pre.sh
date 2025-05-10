@@ -32,6 +32,8 @@ mount -o compress=zstd,noatime,subvol=@swap /dev/sda2 /mnt/swap
 mount -o compress=zstd,noatime,subvol=@snapshots /dev/sda2 /mnt/snapshots
 mount /dev/sda1 /mnt/efi
 
+#
+nano /etc/pacman.conf
 # Install base system
 pacstrap -K /mnt base base-devel linux-zen linux-firmware linux-zen-headers nano git btrfs-progs amd-ucode
 

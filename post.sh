@@ -26,8 +26,10 @@ passwd xetra
 export EDITOR=nano
 visudo
 
+nano /etc/pacman.conf
+
 # GPU drivers
-pacman -S --noconfirm vulkan-radeon mesa mesa-vdpau libva-mesa-driver lib32-vulkan-radeon lib32-mesa lib32-mesa-vdpau lib32-libva-mesa-driver
+pacman -Syy --noconfirm vulkan-radeon mesa mesa-vdpau libva-mesa-driver lib32-vulkan-radeon lib32-mesa lib32-mesa-vdpau lib32-libva-mesa-driver
 
 # Bootloader & networking
 pacman -S --noconfirm grub efibootmgr dhcpcd iwd timeshift inotify-tools grub-btrfs zram-generator
